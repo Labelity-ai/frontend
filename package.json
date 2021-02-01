@@ -1,0 +1,33 @@
+{
+  "name": "next-auth-test",
+  "version": "1.0.0",
+  "description": "Testing next auth library",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelhodar/next-auth-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelhodar/next-auth-test/issues"
+  },
+  "homepage": "https://github.com/angelhodar/next-auth-test#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^1.2.1",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "framer-motion": "^3.2.2-rc.1",
+    "next": "^10.0.6",
+    "next-auth": "^3.2.0",
+    "pg": "^8.5.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
