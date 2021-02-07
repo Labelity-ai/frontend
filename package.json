@@ -24,10 +24,12 @@
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
     "framer-motion": "^3.2.2-rc.1",
+    "jsonwebtoken": "^8.5.1",
     "next": "^10.0.6",
     "next-auth": "^3.2.0",
     "pg": "^8.5.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0"
   }
 }
