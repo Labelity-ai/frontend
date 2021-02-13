@@ -6,11 +6,11 @@ import {
   SimpleGrid,
   Image,
 } from "@chakra-ui/react";
+import React from "react";
 import { signIn, useSession } from "next-auth/client";
 import { FaGithub, FaGitlab, FaAtlassian } from "react-icons/fa";
 import LoginForm from "../components/LoginForm";
 import DividerWithText from "../components/DividerWithText";
-import { getSite } from "../utils";
 import { useRouter } from "next/router";
 
 const providers = [
@@ -39,14 +39,12 @@ const providers = [
 const Login = () => {
   const router = useRouter();
   const [session, loading] = useSession();
-  const callbackUrl = `${getSite()}/dashboard`;
 
-  if (loading) return "";
+  React.useEffect(() => {
+    if (!loading && session) router.push("/dashboard");
+  }, [session, loading]);
 
-  if (session) {
-    router.push(callbackUrl);
-    return null;
-  }
+  if (loading) return null;
 
   return (
     <Box bgColor="#161822" minH="100vh" py="12" px={{ sm: "6", lg: "8" }}>
@@ -82,7 +80,7 @@ const Login = () => {
           </Box>
         </Text>
       </Box>
-      <Box maxW={{ sm: "md" }} mx={{ sm: "auto" }} mt="8" w={{ sm: "full" }}>
+      <Box maxW={{ sm: "md" }} mx={{ sm: "auto" }} mt="2" w={{ sm: "full" }}>
         <Box
           bgColor="#161822"
           py="8"
@@ -101,7 +99,11 @@ const Login = () => {
                 color={textColor}
                 _hover={{ bg: color }}
                 variant="solid"
-                onClick={() => signIn(id, { callbackUrl })}
+                onClick={() =>
+                  signIn(id, {
+                    callbackUrl: `${process.env.NEXT_PUBLIC_SITE}/dashboard`,
+                  })
+                }
               >
                 Sign in with {name}
               </Button>

@@ -1,19 +1,17 @@
+import React from "react";
 import { HStack, Text, Flex, Box, Button } from "@chakra-ui/react";
 import { signOut, useSession } from "next-auth/client";
-import { getSite } from "../utils";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 const Dashboard = () => {
   const router = useRouter();
   const [session, loading] = useSession();
-  const callbackUrl = `${getSite()}/login`;
 
-  if (loading) return "";
-  
-  if (!session) {
-    router.push(callbackUrl);
-    return null;
-  }
+  React.useEffect(() => {
+    if (!loading && !session) router.push("/login");
+  }, [session, loading]);
+
+  if (loading) return null;
 
   return (
     <HStack spacing="0">
@@ -21,7 +19,7 @@ const Dashboard = () => {
         <Flex justifyContent="center">
           <Button
             onClick={() =>
-              signOut({ callbackUrl })
+              signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_SITE}/login` })
             }
           >
             Sign Out
