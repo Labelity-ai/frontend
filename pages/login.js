@@ -91,8 +91,8 @@ const Login = () => {
           rounded={{ sm: "lg" }}
         >
           <LoginForm />
-          <DividerWithText mt="6">or continue with</DividerWithText>
-          <SimpleGrid mt="6" columns={3} spacing="3">
+          <DividerWithText mt="6">or</DividerWithText>
+          <SimpleGrid mt="6" columns={1} spacing="3">
             {providers.map(({ id, name, icon, textColor, color }) => (
               <Button
                 key={id}
@@ -103,7 +103,7 @@ const Login = () => {
                 variant="solid"
                 onClick={() => signIn(id, { callbackUrl })}
               >
-                {name}
+                Sign in with {name}
               </Button>
             ))}
           </SimpleGrid>

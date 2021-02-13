@@ -1,7 +1,6 @@
 const getSite = () => {
-  if (typeof window !== "undefined" || !process.env.VERCEL)
-    return `http://localhost:3000`;
-  return `https://${process.env.VERCEL_URL}`;
+  if (process.env.VERCEL) return `https://${process.env.VERCEL_URL}`;
+  return `http://localhost:3000`; 
 };
 
 export { getSite };

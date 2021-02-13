@@ -5,16 +5,17 @@ import jwt from "jsonwebtoken";
 export default NextAuth({
   providers: [
     Providers.GitHub({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
+      clientId: process.env.GITHUB_CLIENT_ID,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET,
     }),
     Providers.GitLab({
-      clientId: process.env.GITLAB_ID,
-      clientSecret: process.env.GITLAB_SECRET,
+      clientId: process.env.GITLAB_CLIENT_ID,
+      clientSecret: process.env.GITLAB_CLIENT_SECRET,
     }),
     Providers.Atlassian({
-      clientId: process.env.ATLASSIAN_ID,
-      clientSecret: process.env.ATLASSIAN_SECRET,
+      clientId: process.env.ATLASSIAN_CLIENT_ID,
+      clientSecret: process.env.ATLASSIAN_CLIENT_SECRET,
+      scope: 'write:jira-work read:jira-work read:jira-user offline_access read:me'
     }),
   ],
   database: process.env.DATABASE_URL,
