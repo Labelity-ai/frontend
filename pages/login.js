@@ -9,8 +9,6 @@ import {
 import React from "react";
 import { signIn, useSession } from "next-auth/client";
 import { FaGithub, FaGitlab, FaAtlassian } from "react-icons/fa";
-import LoginForm from "../components/LoginForm";
-import DividerWithText from "../components/DividerWithText";
 import { useRouter } from "next/router";
 
 const providers = [
@@ -80,7 +78,7 @@ const Login = () => {
           </Box>
         </Text>
       </Box>
-      <Box maxW={{ sm: "md" }} mx={{ sm: "auto" }} mt="2" w={{ sm: "full" }}>
+      <Box maxW={{ sm: "md" }} mx={{ sm: "auto" }} w={{ sm: "full" }}>
         <Box
           bgColor="#161822"
           py="8"
@@ -88,9 +86,7 @@ const Login = () => {
           shadow="base"
           rounded={{ sm: "lg" }}
         >
-          <LoginForm />
-          <DividerWithText mt="6">or</DividerWithText>
-          <SimpleGrid mt="6" columns={1} spacing="3">
+          <SimpleGrid mt="6" columns={1} spacing="5">
             {providers.map(({ id, name, icon, textColor, color }) => (
               <Button
                 key={id}
