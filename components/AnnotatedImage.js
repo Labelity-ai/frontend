@@ -3,15 +3,15 @@ import { Stage, Layer, Rect, Circle, Line, Text, Group } from 'react-konva';
 import { Image } from 'react-konva';
 import useImage from 'use-image';
 import chunk from 'lodash.chunk';
+import hexRgb from 'hex-rgb';
 
-import { getRandomColors } from "../utils/colors";
 
 const Tooltip = ({ label, score, attributes, x, y }) => (
     <Text text={`Label: ${label}`} x={x} y={y} fontSize={16} fontStyle="bold" fill="white" />
 )
 
 
-const BoundingBox = ({ box, label, score, attributes, image_width, image_height }) => {
+const BoundingBox = ({ box, label, score, attributes, imageWidth, imageHeight, color }) => {
     const [showTooltip, setShowTooltip] = useState(false);
     const handleOnMouseEnter = (e) => setShowTooltip(true);
     const handleOnMouseLeave = (e) => setShowTooltip(null);
@@ -19,12 +19,13 @@ const BoundingBox = ({ box, label, score, attributes, image_width, image_height 
     return (
         <Group>
             <Rect
-                x={box[0] * image_width}
-                y={box[1] * image_height}
-                width={(box[2] - box[0]) * image_width}
-                height={(box[3] - box[1]) * image_height}
-                stroke={getRandomColors(1)[0]}
+                x={box[0] * imageWidth}
+                y={box[1] * imageHeight}
+                width={(box[2] - box[0]) * imageWidth}
+                height={(box[3] - box[1]) * imageHeight}
+                stroke={color}
                 strokeWidth={2}
+                opacity={0.75}
                 onMouseEnter={handleOnMouseEnter}
                 onMouseLeave={handleOnMouseLeave}
             />
@@ -33,8 +34,8 @@ const BoundingBox = ({ box, label, score, attributes, image_width, image_height 
                     attributes={attributes}
                     label={label}
                     score={score}
-                    x={(box[2] - box[0]) * image_width}
-                    y={box[1] * image_height}
+                    x={(box[2] - box[0]) * imageWidth}
+                    y={box[1] * imageHeight}
                 />
             )}
         </Group>
@@ -42,28 +43,28 @@ const BoundingBox = ({ box, label, score, attributes, image_width, image_height 
 }
 
 
-const Polyline = ({ points, label, score, attributes, image_width, image_height, ...rest }) => {
+const Polyline = ({ points, label, score, attributes, imageWidth, imageHeight, color, ...rest }) => {
     const [showTooltip, setShowTooltip] = useState(false);
     const handleOnMouseEnter = (e) => setShowTooltip(true);
     const handleOnMouseLeave = (e) => setShowTooltip(null);
+    const fillColor = hexRgb(color);
 
     return (
         <Group>
             <Line
-                points={points.map((x, i) => i % 2 ? x * image_height : x * image_width)}
-                stroke={getRandomColors(1)[0]}
-                fill={getRandomColors(1)[0]}
+                points={points.map((x, i) => i % 2 ? x * imageHeight : x * imageWidth)}
+                stroke={color}
+                fill={`rgba(${fillColor.red}, ${fillColor.green}, ${fillColor.blue}, 0.6)`}
                 strokeWidth={2}
                 onMouseEnter={handleOnMouseEnter}
                 onMouseLeave={handleOnMouseLeave}
-                opacity={0.5}
                 {...rest}
             />
         </Group>
     )
 }
 
-const Keypoints = ({ points, label, score, attributes, image_width, image_height, ...rest }) => {
+const Keypoints = ({ points, label, score, attributes, imageWidth, imageHeight, color, ...rest }) => {
     const [showTooltip, setShowTooltip] = useState(false);
     const handleOnMouseEnter = (e) => setShowTooltip(true);
     const handleOnMouseLeave = (e) => setShowTooltip(null);
@@ -72,12 +73,13 @@ const Keypoints = ({ points, label, score, attributes, image_width, image_height
         <Group>
             {chunk(points, 2).map(([x, y]) => (
                 <Circle
-                    x={x * image_width}
-                    y={y * image_height}
+                    x={x * imageWidth}
+                    y={y * imageHeight}
                     points={points}
-                    stroke={getRandomColors(1)[0]}
-                    radius={6}
-                    strokeWidth={2}
+                    stroke={color}
+                    radius={4}
+                    strokeWidth={1.5}
+                    opacity={0.9}
                     onMouseEnter={handleOnMouseEnter}
                     onMouseLeave={handleOnMouseLeave}
                     {...rest}
@@ -88,25 +90,46 @@ const Keypoints = ({ points, label, score, attributes, image_width, image_height
 }
 
 
-const AnnotatedImage = ({ image_url, annotations, image_width, image_height }) => {
-    const [image] = useImage(image_url);
+const AnnotatedImage = ({ imageUrl, annotations, imageWidth, imageHeight, labelColors }) => {
+    const [image] = useImage(imageUrl);
     const { detections, polygons, polylines, points, tags } = annotations
 
     return (
-        <Stage width={image_width} height={image_height}>
+        <Stage width={imageWidth} height={imageHeight}>
             <Layer>
-                <Image image={image} width={image_width} height={image_height} />
+                <Image image={image} width={imageWidth} height={imageHeight} />
                 {detections.map(det => (
-                    <BoundingBox image_width={image_width} image_height={image_height} {...det} />
+                    <BoundingBox
+                        imageWidth={imageWidth}
+                        imageHeight={imageHeight}
+                        color={labelColors[det.label]}
+                        {...det}
+                    />
                 ))}
                 {polygons.map(poly => (
-                    <Polyline image_width={image_width} image_height={image_height} {...poly} closed />
+                    <Polyline
+                        imageWidth={imageWidth}
+                        imageHeight={imageHeight}
+                        color={labelColors[poly.label]}
+                        closed
+                        {...poly}
+                    />
                 ))}
                 {polylines.map(poly => (
-                    <Polyline image_width={image_width} image_height={image_height} {...poly} />
+                    <Polyline
+                        imageWidth={imageWidth}
+                        imageHeight={imageHeight}
+                        color={labelColors[poly.label]}
+                        {...poly}
+                    />
                 ))}
                 {points.map(pointsGroup => (
-                    <Keypoints image_width={image_width} image_height={image_height} {...pointsGroup} />
+                    <Keypoints
+                        imageWidth={imageWidth}
+                        imageHeight={imageHeight}
+                        color={labelColors[pointsGroup.label]}
+                        {...pointsGroup}
+                    />
                 ))}
             </Layer>
         </Stage>
