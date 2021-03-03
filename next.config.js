@@ -3,9 +3,12 @@ module.exports = {
       return [
         {
           source: '/',
-          destination: '/login',
+          destination: '/dashboard',
           permanent: true,
         },
       ]
+    },
+    images: {
+        domains: ['hips.hearstapps.com'],
     },
   }
