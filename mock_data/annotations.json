@@ -1,0 +1,6462 @@
+{
+  "data": [
+    {
+      "eventId": "double_hoist-2020-12-04-15-36-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.00028645833333333333,
+            0.6543981481481481,
+            0.094578125,
+            0.8988333333333334
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.059375,
+            0.7759259259259259,
+            0.10416666666666666,
+            0.8703703703703703
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.020526041666666665,
+            0.7139537037037037,
+            0.12319270833333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 0
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-23-00-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.201921875,
+            0.6589907407407408,
+            0.2875260416666666,
+            0.855212962962963
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.2604166666666667,
+            0.7194444444444444,
+            0.2805208333333334,
+            0.7509259259259259
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.11677604166666668,
+            0.7260185185185185,
+            0.27275520833333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 60
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-23-15-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.22222916666666667,
+            0.5697407407407408,
+            0.29602083333333334,
+            0.9984907407407406
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.24270833333333333,
+            0.612037037037037,
+            0.25729166666666664,
+            0.6611111111111111
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.19996354166666666,
+            0.5338333333333333,
+            0.24313020833333332,
+            0.8277407407407407
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 61
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-15-17-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.010005208333333333,
+            0.7666388888888889,
+            0.12533854166666666,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0671875,
+            0.8435185185185186,
+            0.08958333333333333,
+            0.8944444444444445
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 62
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-18-12-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.0005729166666666667,
+            0.6536574074074074,
+            0.12340104166666668,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.030208333333333334,
+            0.7222222222222222,
+            0.06041666666666667,
+            0.7583333333333333
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 4
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-20-23-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.13802083333333334,
+            0.562962962962963,
+            0.15520833333333334,
+            0.5972222222222222
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.122734375,
+            0.5338425925925926,
+            0.18814583333333335,
+            0.8316666666666668
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.2484375,
+            0.6268518518518519,
+            0.2755208333333333,
+            0.6731481481481482
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.08933854166666667,
+            0.5725925925925925,
+            0.11551041666666667,
+            0.6303240740740741
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.05405729166666667,
+            0.5368240740740741,
+            0.14794270833333334,
+            0.810787037037037
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.2182083333333333,
+            0.5770277777777778,
+            0.31377083333333333,
+            0.9983888888888889
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 46
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-19-38-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.075,
+            0.774074074074074,
+            0.10328125,
+            0.8259259259259258
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0459375,
+            0.7040277777777778,
+            0.14434375,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 41
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-18-48-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.39895833333333336,
+            0.5925925925925926,
+            0.43125,
+            0.6435185185185185
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.04348958333333333,
+            0.829537037037037,
+            0.09195833333333334,
+            0.919148148148148
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.19740624999999998,
+            0.4890555555555555,
+            0.3171041666666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.028125,
+            0.6768518518518518,
+            0.05677083333333333,
+            0.7416666666666666
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.3563177083333333,
+            0.5316111111111111,
+            0.4961822916666666,
+            0.8606666666666667
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0,
+            0.6153148148148148,
+            0.05842708333333334,
+            0.8808425925925925
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.23333333333333334,
+            0.5444444444444444,
+            0.2635416666666667,
+            0.5962962962962962
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0,
+            0.7307870370370371,
+            0.15806770833333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 8
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-18-17-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.042083333333333334,
+            0.9171666666666667,
+            0.07455729166666666,
+            0.9956574074074074
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.030770833333333334,
+            0.8176296296296296,
+            0.18956770833333336,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.004520833333333333,
+            0.6325648148148147,
+            0.08769270833333333,
+            0.8796851851851851
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.85340625,
+            0.7498148148148148,
+            0.9884843750000001,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.8817708333333333,
+            0.8666666666666667,
+            0.9161458333333333,
+            0.9212962962962963
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.026041666666666668,
+            0.6824074074074075,
+            0.04947916666666667,
+            0.7342592592592593
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 5
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-21-29-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.10545833333333333,
+            0.6181203703703704,
+            0.2415625,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.08802083333333334,
+            0.5518518518518518,
+            0.109375,
+            0.5990740740740741
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.30000520833333333,
+            0.5148796296296296,
+            0.3886354166666666,
+            0.9112314814814815
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.334375,
+            0.562037037037037,
+            0.3494791666666666,
+            0.5990740740740741
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.067734375,
+            0.5178981481481482,
+            0.14703645833333334,
+            0.9489074074074073
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 54
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-14-55-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.019317708333333336,
+            0.6110925925925926,
+            0.16645312499999998,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0765625,
+            0.6824074074074075,
+            0.1078125,
+            0.7490740740740741
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": true,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 19
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-16-06-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.36302083333333335,
+            0.6703703703703704,
+            0.3979166666666667,
+            0.725925925925926
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.31352083333333336,
+            0.6005462962962963,
+            0.4801875,
+            0.9400277777777778
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.3815,
+            0.8844351851851853,
+            0.42895833333333333,
+            0.9540462962962962
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.304140625,
+            0.7854722222222221,
+            0.5845416666666666,
+            0.9998796296296295
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 25
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-19-23-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.05,
+            0.637962962962963,
+            0.071875,
+            0.6796296296296296
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.48378645833333334,
+            0.8134629629629629,
+            0.65296875,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.002046875,
+            0.5925,
+            0.13354166666666664,
+            0.9747222222222223
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 40
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-22-00-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.05026041666666667,
+            0.7069444444444445,
+            0.058333333333333334,
+            0.7491666666666668
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0010572916666666667,
+            0.6529074074074074,
+            0.10581770833333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 16
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-19-13-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.09318749999999999,
+            0.5746388888888889,
+            0.18373958333333332,
+            0.8140648148148149
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.246953125,
+            0.4870925925925925,
+            0.32142708333333336,
+            0.9159074074074074
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.27395833333333336,
+            0.5305555555555556,
+            0.28958333333333336,
+            0.562037037037037
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.115625,
+            0.6129629629629629,
+            0.13854166666666667,
+            0.6592592592592592
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 38
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-16-01-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.517109375,
+            0.5140648148148149,
+            0.6357552083333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.546875,
+            0.5694444444444444,
+            0.5677083333333334,
+            0.6259259259259259
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": true,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.20885416666666667,
+            0.6148148148148148,
+            0.24114583333333334,
+            0.6796296296296296
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.17985416666666668,
+            0.5671944444444444,
+            0.27532812500000003,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 24
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-21-19-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.035416666666666666,
+            0.7287037037037037,
+            0.0703125,
+            0.7972222222222223
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0074062500000000005,
+            0.6559351851851851,
+            0.11971875000000001,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 14
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-17-46-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.0611875,
+            0.5006296296296295,
+            0.16249479166666667,
+            0.9174351851851852
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.08072916666666667,
+            0.5370370370370371,
+            0.10208333333333333,
+            0.5722222222222223
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.35471354166666663,
+            0.6689814814814815,
+            0.508,
+            0.9734351851851852
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.36614583333333334,
+            0.7453703703703703,
+            0.39166666666666666,
+            0.7981481481481482
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 31
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-16-13-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.343640625,
+            0.6381296296296296,
+            0.456046875,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.390625,
+            0.6944444444444444,
+            0.42083333333333334,
+            0.7435185185185185
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": true,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 64
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-19-48-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.0010416666666666667,
+            0.7583333333333333,
+            0.0203125,
+            0.836111111111111
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0,
+            0.7020462962962963,
+            0.10734895833333334,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 43
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-15-46-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.08018750000000001,
+            0.6801851851851852,
+            0.21930208333333334,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.09375,
+            0.7435185185185185,
+            0.12604166666666666,
+            0.8083333333333332
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 22
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-16-31-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.3494791666666667,
+            0.5537037037037037,
+            0.37916666666666665,
+            0.6055555555555555
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.50996875,
+            0.5331944444444444,
+            0.6044427083333332,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0026041666666666665,
+            0.7972222222222223,
+            0.021354166666666667,
+            0.8425925925925927
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.312984375,
+            0.5010277777777777,
+            0.4486614583333333,
+            0.9959444444444443
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0,
+            0.7216018518518519,
+            0.11302083333333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 27
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-15-20-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.15104166666666666,
+            0.7981481481481482,
+            0.18125,
+            0.8453703703703703
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.076203125,
+            0.7100740740740741,
+            0.22896354166666666,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 20
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-20-43-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.24166666666666667,
+            0.5898148148148148,
+            0.2682291666666667,
+            0.637962962962963
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.20886458333333333,
+            0.5476666666666666,
+            0.36373958333333334,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 47
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-22-30-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.3734375,
+            0.7796296296296297,
+            0.40885416666666663,
+            0.837962962962963
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.36102604166666663,
+            0.6829166666666666,
+            0.5188125,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 18
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-19-58-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.000020833333333333333,
+            0.6246666666666667,
+            0.1136875,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.005729166666666666,
+            0.6787037037037037,
+            0.03125,
+            0.7296296296296296
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 12
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-15-51-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.5589166666666666,
+            0.9107407407407407,
+            0.596671875,
+            0.9889074074074073
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.02959895833333333,
+            0.7062592592592593,
+            0.16192708333333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.059895833333333336,
+            0.7796296296296297,
+            0.0953125,
+            0.8462962962962963
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.5435520833333333,
+            0.781074074074074,
+            0.7085364583333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 23
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-20-13-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.07516145833333333,
+            0.5612407407407407,
+            0.1966875,
+            0.9304629629629629
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.09166666666666666,
+            0.5972222222222222,
+            0.11197916666666666,
+            0.6342592592592593
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 44
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-18-37-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.030208333333333334,
+            0.6861111111111111,
+            0.058854166666666666,
+            0.7388888888888889
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.06931250000000001,
+            0.5820648148148148,
+            0.157953125,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.075,
+            0.6287037037037037,
+            0.09947916666666666,
+            0.687037037037037
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.312125,
+            0.847712962962963,
+            0.5166875,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.8153645833333333,
+            0.7674537037037037,
+            0.9125156249999999,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.009291666666666667,
+            0.6254907407407407,
+            0.09373958333333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 7
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-19-18-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.5645416666666667,
+            0.7111481481481481,
+            0.67509375,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.6317708333333333,
+            0.7907407407407407,
+            0.6671874999999999,
+            0.8537037037037037
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 39
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-16-56-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.81875,
+            0.812037037037037,
+            0.8609375,
+            0.887037037037037
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.7285625,
+            0.702212962962963,
+            0.87228125,
+            0.9989814814814816
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 28
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-22-05-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0,
+            0.7607777777777778,
+            0.13305729166666666,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.019270833333333334,
+            0.8118518518518518,
+            0.055364583333333335,
+            0.8777777777777778
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.03846354166666666,
+            0.6462129629629629,
+            0.06707812499999999,
+            0.7071296296296297
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.37604166666666666,
+            0.562962962962963,
+            0.4,
+            0.6287037037037038
+          ],
+          "label": "Face",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.3431354166666667,
+            0.5267592592592593,
+            0.4366041666666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0034739583333333332,
+            0.6046388888888888,
+            0.12968229166666667,
+            0.9210370370370371
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 17
+      },
+      "labels": [
+        {
+          "name": "Face",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-18-22-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.019828125,
+            0.6887685185185185,
+            0.11822916666666668,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.475625,
+            0.7175925925925926,
+            0.5399479166666666,
+            0.8383333333333333
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0265625,
+            0.737037037037037,
+            0.05875,
+            0.8
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.23697916666666666,
+            0.8833333333333333,
+            0.28541666666666665,
+            0.9712962962962963
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.44128125,
+            0.6640462962962963,
+            0.6065052083333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.20661458333333332,
+            0.7991203703703703,
+            0.31756770833333337,
+            0.9963796296296296
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 6
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-18-04-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.10052083333333334,
+            0.8537037037037037,
+            0.12135416666666667,
+            0.9027777777777778
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.08968749999999999,
+            0.7649814814814815,
+            0.20497916666666666,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.095625,
+            0.6783240740740741,
+            0.2024375,
+            0.9932962962962963
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 71
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-20-37-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.26164583333333336,
+            0.6389166666666667,
+            0.36341666666666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.29375,
+            0.687962962962963,
+            0.3380208333333333,
+            0.7611111111111112
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 84
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-18-29-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.1171875,
+            0.674074074074074,
+            0.14375,
+            0.7203703703703703
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.08978124999999999,
+            0.6151666666666666,
+            0.1950677083333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 72
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-21-28-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.41115104166666666,
+            0.9323981481481481,
+            0.478265625,
+            1
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.205359375,
+            0.7624907407407407,
+            0.3511666666666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.1015625,
+            0.6574074074074074,
+            0.121875,
+            0.6953703703703704
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.5834375,
+            0.6328888888888888,
+            0.686859375,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.392703125,
+            0.8242777777777778,
+            0.510109375,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.2682291666666667,
+            0.8416666666666667,
+            0.3067708333333333,
+            0.8935185185185185
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.074390625,
+            0.6140462962962963,
+            0.15449479166666666,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 86
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-17-54-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.19272916666666667,
+            0.5817962962962964,
+            0.28216145833333334,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.2359375,
+            0.6212962962962963,
+            0.2484375,
+            0.6583333333333334
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 70
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-17-14-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.054890625,
+            0.6435555555555555,
+            0.13627083333333334,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.3058125,
+            0.5836018518518519,
+            0.4367864583333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.5292708333333334,
+            0.9228703703703705,
+            0.5966145833333334,
+            1
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 68
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-20-01-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.03810416666666667,
+            0.7996388888888889,
+            0.150046875,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.046875,
+            0.8824074074074074,
+            0.07447916666666667,
+            0.9342592592592592
+          ],
+          "label": "Face",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.11770833333333333,
+            0.7222222222222222,
+            0.13958333333333334,
+            0.762962962962963
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.09023958333333333,
+            0.6768148148148149,
+            0.18056250000000001,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 80
+      },
+      "labels": [
+        {
+          "name": "Face",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-16-23-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.09197916666666667,
+            0.7231574074074074,
+            0.20642187499999998,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.13333333333333333,
+            0.7898148148148149,
+            0.16614583333333333,
+            0.8768518518518519
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 65
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-19-10-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.31354166666666666,
+            0.5990740740740741,
+            0.3229166666666667,
+            0.6222222222222222
+          ],
+          "label": "Face",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.2896354166666667,
+            0.5537685185185186,
+            0.35911458333333335,
+            0.9486111111111111
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 77
+      },
+      "labels": [
+        {
+          "name": "Face",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-16-33-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.23958333333333334,
+            0.7240740740740741,
+            0.2713541666666667,
+            0.7907407407407407
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.054578125000000005,
+            0.6442962962962964,
+            0.14190104166666667,
+            0.9155277777777778
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.03696354166666667,
+            0.7740925925925926,
+            0.19039583333333338,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.14114583333333333,
+            0.5935185185185186,
+            0.16041666666666665,
+            0.6361111111111112
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.10554166666666666,
+            0.556287037037037,
+            0.20659375000000002,
+            0.968212962962963
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.24247395833333335,
+            0.6395092592592592,
+            0.2694427083333334,
+            0.6836666666666666
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.19716666666666666,
+            0.5941574074074074,
+            0.3172552083333333,
+            0.8622777777777777
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.19172395833333333,
+            0.6668055555555555,
+            0.328453125,
+            0.9738611111111111
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 66
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-20-27-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.06979166666666667,
+            0.7268518518518519,
+            0.08229166666666667,
+            0.7787037037037037
+          ],
+          "label": "Face",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.023109374999999998,
+            0.9171388888888888,
+            0.05769791666666667,
+            0.9808055555555555
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.028317708333333334,
+            0.6599351851851852,
+            0.11563020833333332,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 82
+      },
+      "labels": [
+        {
+          "name": "Face",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-21-53-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0,
+            0.7680925925925925,
+            0.12004687500000001,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0328125,
+            0.8333333333333334,
+            0.0484375,
+            0.888888888888889
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 87
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-16-58-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0,
+            0.6952777777777778,
+            0.196796875,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.06041666666666667,
+            0.7935185185185185,
+            0.09479166666666666,
+            0.8490740740740741
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 67
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-19-46-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.39126041666666667,
+            0.692037037037037,
+            0.5506302083333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.4395833333333333,
+            0.7425925925925926,
+            0.45625,
+            0.8018518518518518
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 78
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-15-48-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.09322916666666667,
+            0.7592592592592593,
+            0.11875,
+            0.8083333333333333
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.07354166666666666,
+            0.6979722222222222,
+            0.17096875,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 63
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-17-29-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.30109895833333333,
+            0.5820277777777778,
+            0.37002083333333335,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.33177083333333335,
+            0.6277777777777778,
+            0.35208333333333336,
+            0.6824074074074074
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 69
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-08-15-53-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.11747916666666666,
+            0.7382685185185186,
+            0.236515625,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.16822916666666668,
+            0.7953703703703704,
+            0.1953125,
+            0.85
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 91
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-08-15-07-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.13394270833333335,
+            0.6039351851851852,
+            0.22521875000000002,
+            0.9901203703703703
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.189,
+            0.7386759259259259,
+            0.35091145833333337,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.041963541666666666,
+            0.6464814814814815,
+            0.12423437500000001,
+            0.8997037037037037
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.15729166666666666,
+            0.6453703703703704,
+            0.1796875,
+            0.687962962962963
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.028359375000000003,
+            0.737925925925926,
+            0.12330208333333335,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 90
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-20-32-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.36354166666666665,
+            0.7157407407407408,
+            0.3802083333333333,
+            0.7555555555555556
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.14114583333333333,
+            0.6898148148148148,
+            0.1703125,
+            0.7481481481481481
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.33473958333333337,
+            0.6583796296296296,
+            0.44867187500000005,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.11557291666666666,
+            0.6569444444444444,
+            0.1992864583333333,
+            0.8899074074074074
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.12352083333333333,
+            0.9527685185185185,
+            0.15852604166666667,
+            1
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 83
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-19-00-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0,
+            0.7957962962962963,
+            0.102234375,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0,
+            0.7047777777777777,
+            0.025265625,
+            0.7926851851851852
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0,
+            0.6699537037037037,
+            0.09206249999999999,
+            0.9600648148148148
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0328125,
+            0.8740740740740741,
+            0.06197916666666667,
+            0.9435185185185185
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.9107552083333333,
+            0.5731111111111111,
+            1,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 75
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-20-06-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0,
+            0.7748518518518519,
+            0.10842187499999999,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.05364583333333333,
+            0.8361111111111111,
+            0.07135416666666666,
+            0.8907407407407407
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 81
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-21-07-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.11690104166666666,
+            0.6637037037037037,
+            0.21697395833333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.13020833333333334,
+            0.7305555555555555,
+            0.15052083333333335,
+            0.7731481481481481
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 85
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-22-13-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.19811979166666666,
+            0.6006203703703703,
+            0.290234375,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0007708333333333333,
+            0.8150000000000001,
+            0.080171875,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0015625,
+            0.8685185185185185,
+            0.02760416666666667,
+            0.924074074074074
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.22916666666666666,
+            0.6370370370370371,
+            0.2552083333333333,
+            0.6824074074074075
+          ],
+          "label": "Face",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 88
+      },
+      "labels": [
+        {
+          "name": "Face",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-19-05-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.840390625,
+            0.6519074074074074,
+            1,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.03701041666666667,
+            0.6041481481481482,
+            0.114453125,
+            0.8684074074074075
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.01165625,
+            0.7088425925925925,
+            0.18357291666666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.04741666666666667,
+            0.642287037037037,
+            0.06780208333333333,
+            0.6880740740740742
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0515625,
+            0.7824074074074074,
+            0.065625,
+            0.8342592592592593
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.8895833333333333,
+            0.7583333333333333,
+            0.9239583333333333,
+            0.8296296296296296
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 76
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-18-50-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.9223645833333334,
+            0.6793611111111112,
+            1,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.8625,
+            0.7787037037037037,
+            0.8947916666666668,
+            0.8592592592592593
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.7862552083333333,
+            0.7119166666666666,
+            0.9041145833333334,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.9427083333333334,
+            0.75,
+            0.9796875,
+            0.812037037037037
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.04858333333333333,
+            0.7037777777777778,
+            0.15905729166666666,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 74
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-08-16-49-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.05,
+            0.8898148148148148,
+            0.08854166666666667,
+            0.962037037037037
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.006020833333333334,
+            0.8271388888888889,
+            0.15394791666666666,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 92
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-23-13-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.061036458333333335,
+            0.8204351851851852,
+            0.18438020833333335,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.10104166666666667,
+            0.8638888888888889,
+            0.12395833333333334,
+            0.9055555555555556
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 89
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-18-02-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.42552083333333335,
+            0.600925925925926,
+            0.46197916666666666,
+            0.6814814814814816
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.035046875000000005,
+            0.6346481481481481,
+            0.13479166666666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.18072916666666666,
+            0.5361111111111111,
+            0.2046875,
+            0.5740740740740741
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.305546875,
+            0.5281851851851852,
+            0.5558854166666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.075,
+            0.7037037037037037,
+            0.10052083333333334,
+            0.7444444444444445
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.240703125,
+            0.9562685185185185,
+            0.261296875,
+            0.9998981481481481
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.15395833333333334,
+            0.49468518518518517,
+            0.25372395833333333,
+            0.8475648148148148
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.173234375,
+            0.8460740740740741,
+            0.27466145833333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 3
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-19-08-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.7997864583333333,
+            0.7333611111111111,
+            0.9220624999999999,
+            0.9985370370370372
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.8854166666666666,
+            0.825925925925926,
+            0.9104166666666667,
+            0.888888888888889
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 37
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-20-18-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.4354166666666667,
+            0.5509259259259259,
+            0.4609375,
+            0.6166666666666667
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.390171875,
+            0.5231851851851852,
+            0.47258333333333336,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 45
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-15-30-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.09479166666666666,
+            0.5387037037037037,
+            0.10989583333333333,
+            0.5694444444444444
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.04996875,
+            0.7150740740740741,
+            0.24996875000000002,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.087109375,
+            0.49359259259259264,
+            0.15899999999999997,
+            0.7380277777777778
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 21
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-18-48-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.31979166666666664,
+            0.7537037037037037,
+            0.35312499999999997,
+            0.8314814814814815
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.575,
+            0.6259259259259259,
+            0.6046874999999999,
+            0.6685185185185185
+          ],
+          "label": "Face",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.045932291666666666,
+            0.6039814814814815,
+            0.16248958333333335,
+            0.9985925925925927
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.28681249999999997,
+            0.6760555555555555,
+            0.4399791666666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.07916666666666666,
+            0.6555555555555556,
+            0.10729166666666666,
+            0.7194444444444444
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.5099270833333333,
+            0.5624166666666667,
+            0.6244999999999999,
+            0.9998055555555556
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 36
+      },
+      "labels": [
+        {
+          "name": "Face",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-21-40-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.00625,
+            0.6907407407407408,
+            0.0296875,
+            0.7444444444444445
+          ],
+          "label": "Face",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0,
+            0.633611111111111,
+            0.12666145833333334,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 15
+      },
+      "labels": [
+        {
+          "name": "Face",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-21-49-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.0140625,
+            0.6407407407407407,
+            0.034895833333333334,
+            0.6962962962962963
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.30188020833333334,
+            0.5959907407407407,
+            0.4921562500000001,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.18697916666666667,
+            0.6240740740740741,
+            0.21302083333333333,
+            0.675
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.15895833333333334,
+            0.5733888888888888,
+            0.2851458333333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0,
+            0.6041296296296297,
+            0.141203125,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.35260416666666666,
+            0.6583333333333333,
+            0.3833333333333333,
+            0.7157407407407408
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 55
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-18-40-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.9302083333333333,
+            0.9203703703703704,
+            0.9671875,
+            0.9722222222222222
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.48032291666666665,
+            0.6498333333333334,
+            0.5250625,
+            0.7136666666666667
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.39434895833333333,
+            0.6042222222222222,
+            0.5723697916666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.02899479166666667,
+            0.8595740740740742,
+            0.07044791666666667,
+            0.9223703703703704
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.8790781249999999,
+            0.8227685185185185,
+            1,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.08392708333333333,
+            0.713962962962963,
+            0.20175520833333332,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0,
+            0.782537037037037,
+            0.093671875,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.13385416666666666,
+            0.7833333333333333,
+            0.15885416666666666,
+            0.85
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 73
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-22-45-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.46997395833333333,
+            0.72775,
+            0.6212916666666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.120375,
+            0.9384537037037036,
+            0.153578125,
+            1
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.4771770833333333,
+            0.6373333333333334,
+            0.5822968749999999,
+            0.9334629629629629
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.5265625,
+            0.7,
+            0.5598958333333334,
+            0.7305555555555555
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 58
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-21-24-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.06419791666666667,
+            0.5277222222222223,
+            0.1873385416666667,
+            0.9816481481481483
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.204578125,
+            0.7510648148148148,
+            0.3521302083333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.084375,
+            0.5703703703703704,
+            0.10572916666666668,
+            0.612037037037037
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 53
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-19-43-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.3067708333333333,
+            0.6712962962962963,
+            0.32916666666666666,
+            0.7296296296296296
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.2039375,
+            0.5249722222222223,
+            0.280421875,
+            0.766175925925926
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.14958333333333332,
+            0.6109166666666667,
+            0.2873541666666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.42239583333333336,
+            0.6259259259259259,
+            0.4369791666666667,
+            0.6666666666666666
+          ],
+          "label": "Face",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.26213020833333334,
+            0.6216296296296296,
+            0.35368750000000004,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.4189166666666667,
+            0.5698148148148148,
+            0.49740625,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.2375,
+            0.5740740740740741,
+            0.25,
+            0.6101851851851852
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.3339166666666667,
+            0.503712962962963,
+            0.38629166666666664,
+            0.895
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.335265625,
+            0.5408796296296297,
+            0.35424999999999995,
+            0.5710370370370371
+          ],
+          "label": "Face",
+          "score": null,
+          "attributes": {
+            "Blurry": true,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 42
+      },
+      "labels": [
+        {
+          "name": "Face",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-21-19-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.007140625,
+            0.8148888888888889,
+            0.11953124999999999,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.3532083333333333,
+            0.46440740740740744,
+            0.4301770833333333,
+            0.6987870370370372
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.004166666666666667,
+            0.48703703703703705,
+            0.02708333333333333,
+            0.5648148148148149
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0,
+            0.4166666666666667,
+            0.07983333333333334,
+            0.8539537037037037
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 52
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-19-53-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.08052083333333333,
+            0.6866666666666666,
+            0.23630208333333336,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.13645833333333332,
+            0.7731481481481481,
+            0.16770833333333332,
+            0.8444444444444444
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 11
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-22-50-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.018677083333333334,
+            0.6667962962962963,
+            0.10468749999999999,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.04375,
+            0.725925925925926,
+            0.07083333333333333,
+            0.7796296296296297
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 59
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-18-06-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.20422395833333334,
+            0.7617222222222222,
+            0.36754166666666666,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.23697916666666666,
+            0.8870370370370371,
+            0.28281249999999997,
+            0.9481481481481482
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 33
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-07-19-56-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.049192708333333335,
+            0.9145462962962964,
+            0.21500520833333334,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.8473958333333333,
+            0.9083333333333333,
+            0.8984375,
+            0.9990740740740741
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 79
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-20-48-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0,
+            0.6248148148148148,
+            0.10765625,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.015625,
+            0.6712962962962963,
+            0.03802083333333334,
+            0.7092592592592593
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 48
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-16-01-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.2959895833333333,
+            0.5297962962962962,
+            0.38353645833333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.49895833333333334,
+            0.6287037037037037,
+            0.528125,
+            0.7000925925925926
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": true,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.334375,
+            0.5842592592592593,
+            0.3567708333333333,
+            0.6333333333333333
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.42675520833333336,
+            0.5853611111111111,
+            0.6086614583333334,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 1
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-22-40-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.19090625,
+            0.7908981481481481,
+            0.31810416666666663,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0640625,
+            0.6787037037037037,
+            0.08645833333333333,
+            0.7212962962962963
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.143359375,
+            0.6472129629629629,
+            0.28817708333333336,
+            0.9344907407407407
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.20260416666666667,
+            0.7018518518518518,
+            0.23229166666666667,
+            0.7583333333333333
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.03704166666666667,
+            0.633611111111111,
+            0.125640625,
+            0.9658888888888889
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 57
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-20-53-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.12760416666666666,
+            0.5537037037037037,
+            0.14583333333333331,
+            0.5898148148148148
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0171875,
+            0.6472222222222223,
+            0.03958333333333333,
+            0.6870370370370371
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.10263541666666667,
+            0.5160370370370371,
+            0.20615104166666667,
+            0.900175925925926
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.0011250000000000001,
+            0.6089444444444444,
+            0.1609270833333333,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 49
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-04-21-09-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.027083333333333334,
+            0.7185185185185186,
+            0.058854166666666666,
+            0.7842592592592593
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.002802083333333333,
+            0.6541666666666667,
+            0.120125,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 13
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "double_hoist-2020-12-05-17-51-00.png",
+      "thumbnailUrl": null,
+      "imageUrl": null,
+      "points": [],
+      "polylines": [],
+      "detections": [
+        {
+          "box": [
+            0.15271875000000001,
+            0.8223981481481482,
+            0.33766666666666667,
+            1
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.1048125,
+            0.6035277777777778,
+            0.19274999999999998,
+            0.880462962962963
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.13802083333333334,
+            0.65,
+            0.16562500000000002,
+            0.7046296296296296
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.24583333333333332,
+            0.5101851851851852,
+            0.26718749999999997,
+            0.5462962962962963
+          ],
+          "label": "Mask",
+          "score": null,
+          "attributes": {
+            "Blurry": false,
+            "occluded": false
+          }
+        },
+        {
+          "box": [
+            0.21804166666666666,
+            0.47100925925925924,
+            0.29844791666666665,
+            0.8209074074074074
+          ],
+          "label": "Person",
+          "score": null,
+          "attributes": {
+            "occluded": false
+          }
+        }
+      ],
+      "polygons": [],
+      "tags": [],
+      "attributes": {
+        "frame": 32
+      },
+      "labels": [
+        {
+          "name": "Mask",
+          "shape": "box",
+          "attributes": [
+            "occluded",
+            "Blurry"
+          ]
+        },
+        {
+          "name": "Person",
+          "shape": "box",
+          "attributes": [
+            "occluded"
+          ]
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "page": 0,
+    "total": 209
+  },
+  "pipeline_id": "603fb946f243a6e6b415adf9"
+}

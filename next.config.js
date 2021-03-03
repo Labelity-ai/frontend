@@ -9,6 +9,6 @@ module.exports = {
     ];
   },
   images: {
-    domains: ['hips.hearstapps.com'],
+    domains: ['hips.hearstapps.com', 'picsum.photos'],
   },
 };

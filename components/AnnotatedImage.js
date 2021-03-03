@@ -1,3 +1,5 @@
+/* eslint-disable react/no-array-index-key */
+
 import React, {
   useEffect, useRef, useState, useCallback,
 } from 'react';
@@ -188,9 +190,10 @@ const Keypoints = ({
 };
 
 const AnnotatedImage = ({
-  imageUrl, annotations, imageWidth, imageHeight, labelColors,
+  imageUrl, annotations, labelColors, style,
 }) => {
   const [tagWidths, setTagWidths] = useState({});
+  const { width: imageWidth, height: imageHeight } = style;
 
   const {
     detections, polygons, polylines, points, tags,
@@ -209,21 +212,23 @@ const AnnotatedImage = ({
   }, [tagWidths]);
 
   return (
-    <div style={{ width: imageWidth, height: imageHeight }}>
-      <Image src={imageUrl} width={imageWidth} height={imageHeight} />
-      <div style={{ marginTop: -imageHeight, zIndex: 10 }}>
+    <div style={style}>
+      <Image src={imageUrl || 'https://picsum.photos/500/300'} width={imageWidth} height={imageHeight} />
+      <div style={{ marginTop: -imageHeight - 6, zIndex: 10 }}>
         <Stage width={imageWidth} height={imageHeight}>
           <Layer>
-            {detections.map((det) => (
+            {detections.map((det, i) => (
               <BoundingBox
+                key={i}
                 imageWidth={imageWidth}
                 imageHeight={imageHeight}
                 color={labelColors[det.label]}
                 {...det}
               />
             ))}
-            {polygons.map((poly) => (
+            {polygons.map((poly, i) => (
               <Polyline
+                key={i}
                 imageWidth={imageWidth}
                 imageHeight={imageHeight}
                 color={labelColors[poly.label]}
@@ -231,16 +236,18 @@ const AnnotatedImage = ({
                 {...poly}
               />
             ))}
-            {polylines.map((poly) => (
+            {polylines.map((poly, i) => (
               <Polyline
+                key={i}
                 imageWidth={imageWidth}
                 imageHeight={imageHeight}
                 color={labelColors[poly.label]}
                 {...poly}
               />
             ))}
-            {points.map((pointsGroup) => (
+            {points.map((pointsGroup, i) => (
               <Keypoints
+                key={i}
                 imageWidth={imageWidth}
                 imageHeight={imageHeight}
                 color={labelColors[pointsGroup.label]}
@@ -249,6 +256,7 @@ const AnnotatedImage = ({
             ))}
             {tags.map((tag, i) => (getTagX(i) + (tagWidths[i] || 0) < imageWidth ? (
               <Tag
+                key={i}
                 imageWidth={imageWidth}
                 imageHeight={imageHeight}
                 color={labelColors[tag.label]}
