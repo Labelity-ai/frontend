@@ -1,6 +1,6 @@
-import * as React from "react";
-import { Provider } from "next-auth/client";
-import { ChakraProvider } from "@chakra-ui/react";
+import * as React from 'react';
+import { Provider } from 'next-auth/client';
+import { ChakraProvider } from '@chakra-ui/react';
 
 export default function App({ Component, pageProps }) {
   return (

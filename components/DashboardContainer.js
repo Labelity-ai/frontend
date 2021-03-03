@@ -1,5 +1,6 @@
-import { useSession } from "next-auth/client";
-import { Text } from "@chakra-ui/react";
+import React from 'react';
+import { useSession } from 'next-auth/client';
+import { Text } from '@chakra-ui/react';
 
 const DashboardContainer = (props) => {
   const [session] = useSession();

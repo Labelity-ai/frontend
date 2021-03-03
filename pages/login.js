@@ -5,31 +5,31 @@ import {
   Text,
   SimpleGrid,
   Image,
-} from "@chakra-ui/react";
-import React from "react";
-import { signIn, useSession } from "next-auth/client";
-import { FaGithub, FaGitlab, FaAtlassian } from "react-icons/fa";
-import { useRouter } from "next/router";
+} from '@chakra-ui/react';
+import React from 'react';
+import { signIn, useSession } from 'next-auth/client';
+import { FaGithub, FaGitlab, FaAtlassian } from 'react-icons/fa';
+import { useRouter } from 'next/router';
 
 const providers = [
   {
-    id: "github",
-    name: "GitHub",
-    color: "#ffffff",
+    id: 'github',
+    name: 'GitHub',
+    color: '#ffffff',
     icon: <FaGithub />,
   },
   {
-    id: "gitlab",
-    name: "GitLab",
-    color: "#fa7035",
-    textColor: "white",
+    id: 'gitlab',
+    name: 'GitLab',
+    color: '#fa7035',
+    textColor: 'white',
     icon: <FaGitlab />,
   },
   {
-    id: "atlassian",
-    name: "Atlassian",
-    color: "#0052cc",
-    textColor: "white",
+    id: 'atlassian',
+    name: 'Atlassian',
+    color: '#0052cc',
+    textColor: 'white',
     icon: <FaAtlassian />,
   },
 ];
@@ -39,15 +39,15 @@ const Login = () => {
   const [session, loading] = useSession();
 
   React.useEffect(() => {
-    if (!loading && session) router.push("/dashboard");
+    if (!loading && session) router.push('/dashboard');
   }, [session, loading]);
 
   if (loading) return null;
 
   return (
-    <Box bgColor="#161822" minH="100vh" py="12" px={{ sm: "6", lg: "8" }}>
-      <Box maxW={{ sm: "md" }} mx={{ sm: "auto" }} w={{ sm: "full" }}>
-        <Box mb={{ base: "10", md: "20" }}>
+    <Box bgColor="#161822" minH="100vh" py="12" px={{ sm: '6', lg: '8' }}>
+      <Box maxW={{ sm: 'md' }} mx={{ sm: 'auto' }} w={{ sm: 'full' }}>
+        <Box mb={{ base: '10', md: '20' }}>
           <Image mx="auto" boxSize="60%" align="center" src="./logo.png" />
         </Box>
         <Heading
@@ -72,22 +72,24 @@ const Login = () => {
             marginStart="1"
             href="#"
             color="blue.400"
-            display={{ base: "block", sm: "revert" }}
+            display={{ base: 'block', sm: 'revert' }}
           >
             Start free trial
           </Box>
         </Text>
       </Box>
-      <Box maxW={{ sm: "md" }} mx={{ sm: "auto" }} w={{ sm: "full" }}>
+      <Box maxW={{ sm: 'md' }} mx={{ sm: 'auto' }} w={{ sm: 'full' }}>
         <Box
           bgColor="#161822"
           py="8"
-          px={{ base: "4", md: "10" }}
+          px={{ base: '4', md: '10' }}
           shadow="base"
-          rounded={{ sm: "lg" }}
+          rounded={{ sm: 'lg' }}
         >
           <SimpleGrid mt="6" columns={1} spacing="5">
-            {providers.map(({ id, name, icon, textColor, color }) => (
+            {providers.map(({
+              id, name, icon, textColor, color,
+            }) => (
               <Button
                 key={id}
                 leftIcon={icon}
@@ -95,13 +97,13 @@ const Login = () => {
                 color={textColor}
                 _hover={{ bg: color }}
                 variant="solid"
-                onClick={() =>
-                  signIn(id, {
-                    callbackUrl: `${process.env.NEXT_PUBLIC_SITE}/dashboard`,
-                  })
-                }
+                onClick={() => signIn(id, {
+                  callbackUrl: `${process.env.NEXT_PUBLIC_SITE}/dashboard`,
+                })}
               >
-                Sign in with {name}
+                Sign in with
+                {' '}
+                {name}
               </Button>
             ))}
           </SimpleGrid>

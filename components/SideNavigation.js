@@ -1,9 +1,11 @@
-import React from "react";
-import { signOut, useSession } from "next-auth/client";
-import { Flex, Button, VStack, Divider } from "@chakra-ui/react";
-import UserBox from "./UserBox";
-import NavigationButton from "./NavigationButton";
-import { FaImages, FaProjectDiagram, FaStickyNote } from "react-icons/fa";
+import React from 'react';
+import { signOut, useSession } from 'next-auth/client';
+import {
+  Flex, Button, VStack, Divider,
+} from '@chakra-ui/react';
+import { FaImages, FaProjectDiagram, FaStickyNote } from 'react-icons/fa';
+import UserBox from './UserBox';
+import NavigationButton from './NavigationButton';
 
 const SideNavigation = () => {
   const [session] = useSession();
@@ -15,26 +17,24 @@ const SideNavigation = () => {
         <Divider />
         <VStack align="start" w="100%" spacing="15px">
           <NavigationButton
-            name={"Projects"}
+            name="Projects"
             icon={<FaProjectDiagram />}
-            to={"/dashboard/projects"}
+            to="/dashboard/projects"
           />
           <NavigationButton
-            name={"Datasets"}
+            name="Datasets"
             icon={<FaImages />}
-            to={"/dashboard/datasets"}
+            to="/dashboard/datasets"
           />
           <NavigationButton
-            name={"Annotations"}
+            name="Annotations"
             icon={<FaStickyNote />}
-            to={"/dashboard/annotations"}
+            to="/dashboard/annotations"
           />
         </VStack>
         <Divider />
         <Button
-          onClick={() =>
-            signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_SITE}/login` })
-          }
+          onClick={() => signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_SITE}/login` })}
         >
           Sign Out
         </Button>

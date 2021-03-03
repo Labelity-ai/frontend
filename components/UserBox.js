@@ -1,7 +1,10 @@
-import { Flex, Image, VStack, HStack, Text } from "@chakra-ui/react";
+import React from 'react';
+import {
+  Flex, Image, VStack, HStack, Text,
+} from '@chakra-ui/react';
 
 const UserBox = ({ user }) => {
-  const { name, email, image } = user;
+  const { name, email, image } = user || {};
 
   return (
     <Flex justify="center" align="center">

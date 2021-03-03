@@ -1,6 +1,6 @@
-import NextAuth from "next-auth";
-import Providers from "next-auth/providers";
-import jwt from "jsonwebtoken";
+import NextAuth from 'next-auth';
+import Providers from 'next-auth/providers';
+import jwt from 'jsonwebtoken';
 
 export default NextAuth({
   providers: [
@@ -15,12 +15,12 @@ export default NextAuth({
     Providers.Atlassian({
       clientId: process.env.ATLASSIAN_CLIENT_ID,
       clientSecret: process.env.ATLASSIAN_CLIENT_SECRET,
-      scope: 'write:jira-work read:jira-work read:jira-user offline_access read:me'
+      scope: 'write:jira-work read:jira-work read:jira-user offline_access read:me',
     }),
   ],
   database: process.env.DATABASE_URL,
   secret: process.env.JWT_SECRET,
-  debug: process.env.NODE_ENV === "development",
+  debug: process.env.NODE_ENV === 'development',
   session: {
     jwt: true,
   },
@@ -34,13 +34,13 @@ export default NextAuth({
       const { sub, name, email } = token;
       const labelityToken = jwt.sign(
         { sub, name, email },
-        process.env.JWT_SECRET
+        process.env.JWT_SECRET,
       );
       token.labelityToken = labelityToken;
       return token;
     },
   },
   pages: {
-    signIn: "/login",
+    signIn: '/login',
   },
 });
