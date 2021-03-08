@@ -61,7 +61,7 @@ const Contents = ({ children, style }) => (
 );
 
 const HierarchyTree = ({
-  content, canHide, children, style,
+  content, canHide, children, style, leftIcon,
 }) => {
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(true);
@@ -99,6 +99,7 @@ const HierarchyTree = ({
         />
       )}
       <span style={{ verticalAlign: 'middle' }}>{content}</span>
+      {leftIcon && <span style={{ verticalAlign: 'middle', float: 'right' }}>{leftIcon}</span>}
       <Contents style={{ opacity, height: open && previous === open ? 'auto' : height }}>
         <animated.div style={{ transform }} {...bind}>{children}</animated.div>
       </Contents>
