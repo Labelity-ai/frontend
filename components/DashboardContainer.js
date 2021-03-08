@@ -16,7 +16,7 @@ const DashboardContainer = (props) => {
 
   return (
     <div style={{ height: '100vh' }}>
-      <ImagesGrid annotations={annotations.data} columns={3} labels={labels} />
+      <ImagesGrid annotations={annotations.data} labels={labels} />
     </div>
   );
 };
