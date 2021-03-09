@@ -4,7 +4,7 @@ import {
   Flex, Button, VStack, Divider, Text, Stack,
 } from '@chakra-ui/react';
 import {
-  FaImages, FaCog, FaToolbox, FaDatabase,
+  FaImages, FaCog, FaToolbox, FaDatabase, FaBook,
 } from 'react-icons/fa';
 import ProjectSelector from './ProjectSelector';
 import NavigationButton from './NavigationButton';
@@ -14,15 +14,28 @@ const SideNavigation = () => {
   const [session] = useSession();
 
   return (
-    <Flex direction="column" justify="space-between" padding="20px" justifyContent="center" height="100vh" flexGrow={1}>
+    <Flex
+      direction="column"
+      justify="space-between"
+      padding="20px"
+      justifyContent="center"
+      height="100vh"
+      width="300px"
+      flexGrow={1}
+    >
       <VStack spacing="15px" width="100%" height="100%">
         <ProjectSelector {...session} />
         <VStack align="start" width="100%" spacing="10px">
           <Text paddingLeft="16px" width="100%" textAlign="left" fontSize={14} color="gray.400">DATA MANAGEMENT</Text>
           <NavigationButton
             name="Datasets"
-            icon={<FaImages color="gray.300" />}
+            icon={<FaBook color="gray.300" />}
             to="/dashboard/datasets"
+          />
+          <NavigationButton
+            name="Images"
+            icon={<FaImages color="gray.300" />}
+            to="/dashboard/images"
           />
           <NavigationButton
             name="Annotations"
@@ -32,7 +45,7 @@ const SideNavigation = () => {
           <NavigationButton
             name="Integrations"
             icon={<FaToolbox color="gray.300" />}
-            to="/dashboard/annotations"
+            to="/dashboard/integrations"
           />
         </VStack>
         <Divider />
@@ -45,7 +58,7 @@ const SideNavigation = () => {
           colorScheme="whiteAlpha"
           name="Settings"
           icon={<FaCog color="gray.300" />}
-          to="/dashboard/projects"
+          to="/settings"
         />
         <Divider />
         <Button

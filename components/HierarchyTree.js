@@ -10,9 +10,7 @@ const styles = {
   tree: {
     position: 'relative',
     padding: '4px 0px 0px 0px',
-    textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
-    overflow: 'hidden',
     verticalAlign: 'middle',
   },
   toggle: {
@@ -32,6 +30,15 @@ const styles = {
     marginLeft: 6,
     padding: '4px 0px 0px 14px',
     borderLeft: '1px dashed rgba(255,255,255,0.4)',
+  },
+  contentsWrapper: {
+    cursor: 'pointer',
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    width: '70%',
   },
 };
 
@@ -98,8 +105,10 @@ const HierarchyTree = ({
           onClick={toggleVisibility}
         />
       )}
-      <span style={{ verticalAlign: 'middle' }}>{content}</span>
-      {leftIcon && <span style={{ verticalAlign: 'middle', float: 'right' }}>{leftIcon}</span>}
+      <span style={styles.contentsWrapper} onClick={toggle}>
+        {content}
+      </span>
+      {leftIcon && <span style={{ verticalAlign: 'middle' }}>{leftIcon}</span>}
       <Contents style={{ opacity, height: open && previous === open ? 'auto' : height }}>
         <animated.div style={{ transform }} {...bind}>{children}</animated.div>
       </Contents>

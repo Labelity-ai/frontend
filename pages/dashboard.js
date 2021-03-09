@@ -17,7 +17,7 @@ const Dashboard = () => {
 
   return (
     <HStack spacing="0">
-      <Box minH="100vh" bgColor="gray.900" width="300px">
+      <Box minH="100vh" bgColor="gray.900">
         <SideNavigation />
       </Box>
       <Box minH="100vh" bgColor="#161822" width="100%">

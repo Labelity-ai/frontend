@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
-import { FaSquare } from 'react-icons/all';
+import { FaSquare } from 'react-icons/fa';
 import styles from './LabelsTreeStyle.module.css';
 import HierarchyTree from '../HierarchyTree';
 
@@ -12,7 +12,7 @@ const LabelsTree = ({ labels }) => (
         <HierarchyTree content="is_expensive" canHide />
         <HierarchyTree content="uniqueness" canHide />
       </HierarchyTree>
-      <HierarchyTree content="person" canHide leftIcon={<FaSquare color="cian" style={{ display: 'inline' }} />}>
+      <HierarchyTree content="person person person person person" canHide leftIcon={<FaSquare color="cian" style={{ display: 'inline' }} />}>
         <HierarchyTree content="is_blurry" canHide />
         <HierarchyTree content="is_wearing_mask" canHide />
         <HierarchyTree content="uniqueness" canHide />
