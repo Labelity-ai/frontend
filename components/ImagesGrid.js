@@ -4,7 +4,7 @@ import zipObject from 'lodash/zipObject';
 import { getRandomColors } from '../utils/colors';
 import AnnotatedImage from './AnnotatedImage';
 
-const ImagesGrid = ({ annotations, labels, columns = 3 }) => {
+const ImagesGrid = ({ annotations, labels, columns = 4 }) => {
   const labelColors = useMemo(() => {
     const colors = getRandomColors(labels.length);
     return zipObject(
@@ -22,9 +22,9 @@ const ImagesGrid = ({ annotations, labels, columns = 3 }) => {
       <AnnotatedImage
         key={rowIndex * columns + columnIndex}
         annotations={data}
-        imageUrl={data.thumbnail_url}
-        imageWidth={style.width}
-        imageHeight={style.height}
+        imageUrl={data.thumbnailUrl}
+        imageWidth={data.imageHidth}
+        imageHeight={data.imageHeight}
         labelColors={labelColors}
         style={style}
       />
@@ -39,7 +39,7 @@ const ImagesGrid = ({ annotations, labels, columns = 3 }) => {
           columnWidth={width / columns}
           height={height}
           rowCount={Math.ceil(annotations.length / columns)}
-          rowHeight={256}
+          rowHeight={(9 / 16) * (width / columns)}
           width={width}
           cellRenderer={Cell}
         />

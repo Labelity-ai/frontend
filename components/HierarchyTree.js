@@ -1,10 +1,7 @@
 import React, {
   useRef, useEffect, useCallback, useState,
 } from 'react';
-import { useSpring, animated } from 'react-spring';
-import {
-  FaPlus, FaMinus, FaEye,
-} from 'react-icons/fa';
+import { FaPlus, FaMinus, FaEye } from 'react-icons/fa';
 
 const styles = {
   tree: {
@@ -42,44 +39,11 @@ const styles = {
   },
 };
 
-export const usePrevious = (value) => {
-  const ref = useRef();
-  useEffect(() => void (ref.current = value), [value]);
-  return ref.current;
-};
-
-export const useMeasure = () => {
-  const ref = useRef();
-  const [bounds, set] = useState({
-    left: 0, top: 0, width: 0, height: 0,
-  });
-  const [ro] = useState(() => new ResizeObserver(([entry]) => set(entry.contentRect)));
-  useEffect(() => {
-    if (ref.current) ro.observe(ref.current);
-    return () => ro.disconnect();
-  }, []);
-  return [{ ref }, bounds];
-};
-
-const Contents = ({ children, style }) => (
-  <animated.div style={{ ...style, ...styles.contents }}>
-    {children}
-  </animated.div>
-);
-
 const HierarchyTree = ({
   content, canHide, children, style, leftIcon,
 }) => {
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(true);
-
-  const previous = usePrevious(open);
-  const [bind, { height: viewHeight }] = useMeasure();
-  const { height, opacity, transform } = useSpring({
-    from: { height: 0, opacity: 0, transform: 'translate3d(20px,0,0)' },
-    to: { height: open ? viewHeight : 0, opacity: open ? 1 : 0, transform: `translate3d(${open ? 0 : 20}px,0,0)` },
-    config: { duration: 200 },
-  });
 
   const toggleVisibility = useCallback(() => {
     setVisible((x) => !x);
@@ -90,6 +54,7 @@ const HierarchyTree = ({
   }, [!children]);
 
   const Icon = open ? FaMinus : FaPlus;
+  const childrenList = open ? children : [];
 
   return (
     <div style={{ ...styles.tree, ...style }}>
@@ -109,9 +74,7 @@ const HierarchyTree = ({
         {content}
       </span>
       {leftIcon && <span style={{ verticalAlign: 'middle' }}>{leftIcon}</span>}
-      <Contents style={{ opacity, height: open && previous === open ? 'auto' : height }}>
-        <animated.div style={{ transform }} {...bind}>{children}</animated.div>
-      </Contents>
+      {childrenList.map((child) => <div style={styles.contents}>{child}</div>)}
     </div>
   );
 };

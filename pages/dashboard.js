@@ -1,9 +1,13 @@
 import React from 'react';
-import { HStack, Box } from '@chakra-ui/react';
+import {
+  HStack, Box, Tabs, TabList, TabPanels, Tab, TabPanel,
+} from '@chakra-ui/react';
 import { useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
-import SideNavigation from '../components/SideNavigation/SideNavigation';
+
+import SideNavigation from '../components/SideNavigation';
 import DashboardContainer from '../components/DashboardContainer';
+import QueryBuilderTab from '../components/QueryBuilderTab';
 
 const Dashboard = () => {
   const router = useRouter();
@@ -17,11 +21,24 @@ const Dashboard = () => {
 
   return (
     <HStack spacing="0">
-      <Box minH="100vh" bgColor="gray.900">
+      <Box height="100vh" bgColor="gray.900">
         <SideNavigation />
       </Box>
-      <Box minH="100vh" bgColor="#161822" width="100%">
-        <DashboardContainer />
+      <Box height="100vh" width="100%">
+        <Tabs>
+          <TabList paddingLeft="20px">
+            <Tab>Image View</Tab>
+            <Tab>Query Builder</Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <DashboardContainer />
+            </TabPanel>
+            <TabPanel>
+              <QueryBuilderTab />
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
       </Box>
     </HStack>
   );

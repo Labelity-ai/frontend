@@ -1,32 +1,45 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import {
   Flex, Menu, MenuButton, MenuList, MenuItemOption, MenuDivider, MenuOptionGroup, Button,
 } from '@chakra-ui/react';
+import { view } from '@risingstack/react-easy-state';
 import Identicon from 'react-identicons';
+import _ from 'lodash';
 
-const ProjectSelector = ({ projects, user, selectedProject }) => {
-  const { name, email, image } = user || {};
+const styles = {
+  identicon: {
+    display: 'inline',
+    position: 'absolute',
+    left: 10,
+    height: '100%',
+    top: 10,
+  },
+};
+
+const ProjectSelector = ({ projects, selectedProjectId, onProjectSelected }) => {
+  const selectedProject = useMemo(
+    () => _.find(projects, (project) => project.id === selectedProjectId),
+    [selectedProjectId],
+  );
 
   return (
     <Flex justify="center" align="center" width="100%" marginBottom="25px">
       <Menu closeOnSelect>
         <MenuButton as={Button} colorScheme="whiteAlpha" backgroundColor="gray.600" width="100%" height="50px">
-          <div style={{
-            display: 'inline',
-            position: 'absolute',
-            left: 10,
-            height: '100%',
-            top: 10,
-          }}
-          >
-            <Identicon string="project_id" size={32} style={{ display: 'inline' }} />
+          <div style={styles.identicon}>
+            <Identicon
+              string={selectedProjectId}
+              size={32}
+              style={{ display: 'inline' }}
+            />
           </div>
-          Project 1
+          {(selectedProject && selectedProject.name) || ''}
         </MenuButton>
         <MenuList minWidth="240px">
-          <MenuOptionGroup title="Projects" type="radio">
-            <MenuItemOption value="project_id">Project 1</MenuItemOption>
-            <MenuItemOption value="project_id">Project 2</MenuItemOption>
+          <MenuOptionGroup title="Projects" type="radio" onChange={onProjectSelected}>
+            {projects.map((project) => (
+              <MenuItemOption value={project.id}>{project.name}</MenuItemOption>
+            ))}
           </MenuOptionGroup>
           <MenuDivider />
           <MenuOptionGroup title="Options">
@@ -38,4 +51,4 @@ const ProjectSelector = ({ projects, user, selectedProject }) => {
   );
 };
 
-export default ProjectSelector;
+export default view(ProjectSelector);

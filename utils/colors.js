@@ -1,5 +1,4 @@
-import values from 'lodash.values';
-import shuffle from 'lodash.shuffle';
+import _ from 'lodash';
 
 export const colorsPalette = {
   aqua: '#00ffff',
@@ -48,6 +47,6 @@ export const colorsPalette = {
 };
 
 export const getRandomColors = (numColors) => {
-  const colors = shuffle(values(colorsPalette));
-  return colors.slice(0, numColors);
+  const colors = _.shuffle(_.values(colorsPalette));
+  return _.range(numColors).map((i) => colors[i % colors.length]);
 };

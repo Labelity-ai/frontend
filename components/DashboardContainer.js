@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSession } from 'next-auth/client';
 import _ from 'lodash';
+import { view } from '@risingstack/react-easy-state';
 import annotations from '../mock_data/annotations.json';
 import ImagesGrid from './ImagesGrid';
 
@@ -21,4 +22,4 @@ const DashboardContainer = (props) => {
   );
 };
 
-export default DashboardContainer;
+export default view(DashboardContainer);
