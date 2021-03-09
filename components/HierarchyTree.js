@@ -38,7 +38,7 @@ const styles = {
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
-    width: '70%',
+    marginRight: '5px',
   },
 };
 
@@ -105,7 +105,7 @@ const HierarchyTree = ({
           onClick={toggleVisibility}
         />
       )}
-      <span style={styles.contentsWrapper} onClick={toggle}>
+      <span style={{ ...styles.contentsWrapper, width: leftIcon ? '70%' : '90%' }} onClick={toggle}>
         {content}
       </span>
       {leftIcon && <span style={{ verticalAlign: 'middle' }}>{leftIcon}</span>}
