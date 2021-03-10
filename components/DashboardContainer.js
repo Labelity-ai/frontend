@@ -13,9 +13,7 @@ const DashboardContainer = () => {
   );
 
   return (
-    <div style={{ height: '100vh' }}>
-      <ImagesGrid annotations={annotations ? annotations.data : []} labels={Store.labels} />
-    </div>
+    <ImagesGrid annotations={annotations ? annotations.data : []} labels={Store.labels} />
   );
 };
 

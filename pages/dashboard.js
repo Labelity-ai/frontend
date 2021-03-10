@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Flex, Box, Tabs, TabList, TabPanels, Tab, TabPanel,
+  Flex, Box, Tabs, TabList, TabPanels, Tab, TabPanel, HStack
 } from '@chakra-ui/react';
 import { useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -20,7 +20,7 @@ const Dashboard = () => {
   if (loading) return null;
 
   return (
-    <Flex>
+    <HStack height="100vh">
       <Box height="100vh" bgColor="gray.900">
         <SideNavigation />
       </Box>
@@ -29,8 +29,8 @@ const Dashboard = () => {
           <Tab>Image View</Tab>
           <Tab>Query Builder</Tab>
         </TabList>
-        <TabPanels>
-          <TabPanel>
+        <TabPanels height="95vh">
+          <TabPanel height="100%">
             <DashboardContainer />
           </TabPanel>
           <TabPanel>
@@ -38,7 +38,7 @@ const Dashboard = () => {
           </TabPanel>
         </TabPanels>
       </Tabs>
-    </Flex>
+    </HStack>
   );
 };
 

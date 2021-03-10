@@ -30,7 +30,7 @@ const ImagesGrid = ({ annotations, columns = 4 }) => {
         <Grid
           columnCount={columns}
           columnWidth={width / columns}
-          height={height - 28}
+          height={height}
           rowCount={Math.ceil(annotations.length / columns)}
           rowHeight={(9 / 16) * (width / columns)}
           width={width}
