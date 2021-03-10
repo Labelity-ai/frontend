@@ -40,14 +40,13 @@ const styles = {
 };
 
 const HierarchyTree = ({
-  content, canHide, children, style, leftIcon,
+  content, canHide, children, style, leftIcon, onVisibilityChanged, visible,
 }) => {
   const [open, setOpen] = useState(false);
-  const [visible, setVisible] = useState(true);
 
   const toggleVisibility = useCallback(() => {
-    setVisible((x) => !x);
-  }, []);
+    if (onVisibilityChanged) onVisibilityChanged(!visible);
+  }, [visible]);
 
   const toggle = useCallback(() => {
     if (children) setOpen((x) => !x);

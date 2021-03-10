@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  HStack, Box, Tabs, TabList, TabPanels, Tab, TabPanel,
+  Flex, Box, Tabs, TabList, TabPanels, Tab, TabPanel,
 } from '@chakra-ui/react';
 import { useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
@@ -20,27 +20,25 @@ const Dashboard = () => {
   if (loading) return null;
 
   return (
-    <HStack spacing="0">
+    <Flex>
       <Box height="100vh" bgColor="gray.900">
         <SideNavigation />
       </Box>
-      <Box height="100vh" width="100%">
-        <Tabs>
-          <TabList paddingLeft="20px">
-            <Tab>Image View</Tab>
-            <Tab>Query Builder</Tab>
-          </TabList>
-          <TabPanels>
-            <TabPanel>
-              <DashboardContainer />
-            </TabPanel>
-            <TabPanel>
-              <QueryBuilderTab />
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
-      </Box>
-    </HStack>
+      <Tabs height="100vh" width="100%">
+        <TabList paddingLeft="20px">
+          <Tab>Image View</Tab>
+          <Tab>Query Builder</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <DashboardContainer />
+          </TabPanel>
+          <TabPanel>
+            <QueryBuilderTab />
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </Flex>
   );
 };
 

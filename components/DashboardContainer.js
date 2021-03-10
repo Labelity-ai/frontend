@@ -1,23 +1,20 @@
 import React from 'react';
-import { useSession } from 'next-auth/client';
-import _ from 'lodash';
 import { view } from '@risingstack/react-easy-state';
-import annotations from '../mock_data/annotations.json';
+import { useQuery } from 'react-query';
 import ImagesGrid from './ImagesGrid';
+import Store from '../utils/store';
+import { fetchAnnotations } from '../utils/api';
 
-const labelsSet = _.uniqWith(
-  _.flatMap(annotations.data, (annotation) => annotation.labels),
-  _.isEqual,
-);
-
-const labels = [...labelsSet];
-
-const DashboardContainer = (props) => {
-  const [session] = useSession();
+const DashboardContainer = () => {
+  const { data: annotations } = useQuery(
+    ['annotations', Store.selectedProject],
+    () => Store.selectedProject && fetchAnnotations(Store.selectedProject, [], 2, 50),
+    { enabled: !!Store.labelColors },
+  );
 
   return (
     <div style={{ height: '100vh' }}>
-      <ImagesGrid annotations={annotations.data} labels={labels} />
+      <ImagesGrid annotations={annotations ? annotations.data : []} labels={Store.labels} />
     </div>
   );
 };

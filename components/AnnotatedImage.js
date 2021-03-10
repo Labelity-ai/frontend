@@ -9,6 +9,8 @@ import {
 import Image from 'next/image';
 import chunk from 'lodash.chunk';
 import hexRgb from 'hex-rgb';
+import { cover } from 'intrinsic-scale';
+import { view } from '@risingstack/react-easy-state';
 
 const TAG_HEIGHT = 20;
 const TAG_SPACING = 20;
@@ -21,7 +23,7 @@ const Tooltip = ({
 );
 
 const BoundingBox = ({
-  box, label, score, attributes, imageWidth, imageHeight, color,
+  box, label, score, attributes, imageWidth, imageHeight, color, offsetX, offsetY,
 }) => {
   const [showTooltip, setShowTooltip] = useState(null);
 
@@ -34,8 +36,8 @@ const BoundingBox = ({
   return (
     <Group>
       <Rect
-        x={box[0] * imageWidth}
-        y={box[1] * imageHeight}
+        x={offsetX + box[0] * imageWidth}
+        y={offsetY + box[1] * imageHeight}
         width={(box[2] - box[0]) * imageWidth}
         height={(box[3] - box[1]) * imageHeight}
         stroke={color}
@@ -113,7 +115,7 @@ const Tag = ({
 };
 
 const Polyline = ({
-  points, label, score, attributes, imageWidth, imageHeight, color, ...rest
+  points, label, score, attributes, imageWidth, imageHeight, color, offsetX, offsetY, ...rest
 }) => {
   const [showTooltip, setShowTooltip] = useState(null);
 
@@ -124,11 +126,14 @@ const Polyline = ({
   const handleOnMouseLeave = useCallback((e) => setShowTooltip(null), []);
 
   const fillColor = hexRgb(color);
+  const absolutePoints = points.map(
+    (x, i) => (i % 2 ? offsetY + x * imageHeight : offsetX + x * imageWidth),
+  );
 
   return (
     <Group>
       <Line
-        points={points.map((x, i) => (i % 2 ? x * imageHeight : x * imageWidth))}
+        points={absolutePoints}
         stroke={color}
         fill={`rgba(${fillColor.red}, ${fillColor.green}, ${fillColor.blue}, 0.6)`}
         strokeWidth={2}
@@ -150,7 +155,7 @@ const Polyline = ({
 };
 
 const Keypoints = ({
-  points, label, score, attributes, imageWidth, imageHeight, color, ...rest
+  points, label, score, attributes, imageWidth, imageHeight, color, offsetX, offsetY, ...rest
 }) => {
   const [showTooltip, setShowTooltip] = useState(null);
 
@@ -164,8 +169,8 @@ const Keypoints = ({
     <Group>
       {chunk(points, 2).map(([x, y]) => (
         <Circle
-          x={x * imageWidth}
-          y={y * imageHeight}
+          x={offsetX + x * imageWidth}
+          y={offsetY + y * imageHeight}
           points={points}
           stroke={color}
           radius={4}
@@ -190,17 +195,22 @@ const Keypoints = ({
 };
 
 const AnnotatedImage = ({
-  imageUrl, annotations, labelColors, style,
+  imageUrl, imageWidth = 500, imageHeight = 300, annotations, labelColors, style, hiddenLabels,
 }) => {
   const [tagWidths, setTagWidths] = useState({});
-  const { width: imageWidth, height: imageHeight } = style;
+  const [isLoaded, setIsLoaded] = useState(false);
+  const { width, height } = style;
+
+  const {
+    width: effectiveImageWidth, height: effectiveImageHeight, x, y,
+  } = cover(width, height, imageWidth, imageHeight);
 
   const {
     detections, polygons, polylines, points, tags,
   } = annotations;
 
-  const handleOnTextWidthChanged = useCallback((i, width) => {
-    setTagWidths((widths) => ({ ...widths, [i]: width }));
+  const handleOnTextWidthChanged = useCallback((i, w) => {
+    setTagWidths((widths) => ({ ...widths, [i]: w }));
   }, []);
 
   const getTagX = useCallback((index) => {
@@ -213,54 +223,74 @@ const AnnotatedImage = ({
 
   return (
     <div style={style}>
-      <Image src={imageUrl || 'https://picsum.photos/500/300'} width={imageWidth} height={imageHeight} />
-      <div style={{ marginTop: -imageHeight - 6, zIndex: 10 }}>
-        <Stage width={imageWidth} height={imageHeight}>
+      <Image
+        src={imageUrl || 'https://picsum.photos/500/300'}
+        width={width}
+        height={height}
+        objectFit="cover"
+        onLoad={() => setIsLoaded(true)}
+      />
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        display: isLoaded ? 'unset' : 'none',
+      }}
+      >
+        <Stage width={width} height={height}>
           <Layer>
-            {detections.map((det, i) => (
+            {detections.map((det, i) => !hiddenLabels[`${det.label}-box`] && (
               <BoundingBox
                 key={i}
-                imageWidth={imageWidth}
-                imageHeight={imageHeight}
-                color={labelColors[det.label]}
+                imageWidth={effectiveImageWidth}
+                imageHeight={effectiveImageHeight}
+                offsetX={x}
+                offsetY={y}
+                color={labelColors[`${det.label}-box`]}
                 {...det}
               />
             ))}
-            {polygons.map((poly, i) => (
+            {polygons.map((poly, i) => !hiddenLabels[`${poly.label}-polygon`] && (
               <Polyline
                 key={i}
-                imageWidth={imageWidth}
-                imageHeight={imageHeight}
-                color={labelColors[poly.label]}
+                imageWidth={effectiveImageWidth}
+                imageHeight={effectiveImageHeight}
+                offsetX={x}
+                offsetY={y}
+                color={labelColors[`${poly.label}-polygon`]}
                 closed
                 {...poly}
               />
             ))}
-            {polylines.map((poly, i) => (
+            {polylines.map((poly, i) => !hiddenLabels[`${poly.label}-polyline`] && (
               <Polyline
                 key={i}
-                imageWidth={imageWidth}
-                imageHeight={imageHeight}
-                color={labelColors[poly.label]}
+                imageWidth={effectiveImageWidth}
+                imageHeight={effectiveImageHeight}
+                offsetX={x}
+                offsetY={y}
+                color={labelColors[`${poly.label}-polyline`]}
                 {...poly}
               />
             ))}
-            {points.map((pointsGroup, i) => (
+            {points.map((pointsGroup, i) => !hiddenLabels[`${pointsGroup.label}-point`] && (
               <Keypoints
                 key={i}
-                imageWidth={imageWidth}
-                imageHeight={imageHeight}
-                color={labelColors[pointsGroup.label]}
+                imageWidth={effectiveImageWidth}
+                imageHeight={effectiveImageHeight}
+                offsetX={x}
+                offsetY={y}
+                color={labelColors[`${pointsGroup.label}-point`]}
                 {...pointsGroup}
               />
             ))}
-            {tags.map((tag, i) => (getTagX(i) + (tagWidths[i] || 0) < imageWidth ? (
+            {tags.map((tag, i) => (getTagX(i) + (tagWidths[i] || 0) < width && !hiddenLabels[`${tag.label}-point`] ? (
               <Tag
                 key={i}
-                imageWidth={imageWidth}
-                imageHeight={imageHeight}
-                color={labelColors[tag.label]}
-                onTextWidthChanged={(width) => handleOnTextWidthChanged(i, width)}
+                imageWidth={effectiveImageWidth}
+                imageHeight={effectiveImageHeight}
+                color={labelColors[`${points.label}-tag`]}
+                onTextWidthChanged={(w) => handleOnTextWidthChanged(i, w)}
                 x={getTagX(i)}
                 {...tag}
               />
@@ -272,4 +302,4 @@ const AnnotatedImage = ({
   );
 };
 
-export default AnnotatedImage;
+export default view(AnnotatedImage);

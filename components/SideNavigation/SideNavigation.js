@@ -37,8 +37,10 @@ const SideNavigation = () => {
 
   useEffect(() => {
     if (projectLabels) {
-      const labelIds = _.sortBy(_.map(projectLabels, ({ shape, name }) => `${name}-${shape}`), (x) => x);
-      Store.labelColors = _.zipObject(labelIds, getRandomColors(labelIds.length));
+      const labelIds = _.sortBy(_.map(projectLabels, ({ shape, name }) => `${name}-${shape}`), (x) => x)
+        .filter((id) => !Store.labelColors[id]);
+      const newColors = _.zipObject(labelIds, getRandomColors(labelIds.length));
+      Store.labelColors = { ...Store.labelColors, ...newColors };
     }
   }, [projectLabels]);
 

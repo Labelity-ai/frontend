@@ -1,18 +1,10 @@
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback } from 'react';
 import { AutoSizer, Grid } from 'react-virtualized';
-import zipObject from 'lodash/zipObject';
-import { getRandomColors } from '../utils/colors';
+import { view } from '@risingstack/react-easy-state';
+import Store from '../utils/store';
 import AnnotatedImage from './AnnotatedImage';
 
-const ImagesGrid = ({ annotations, labels, columns = 4 }) => {
-  const labelColors = useMemo(() => {
-    const colors = getRandomColors(labels.length);
-    return zipObject(
-      labels.map((label) => label.name),
-      colors,
-    );
-  }, [labels]);
-
+const ImagesGrid = ({ annotations, columns = 4 }) => {
   const Cell = useCallback(({ columnIndex, rowIndex, style }) => {
     const data = annotations[rowIndex * columns + columnIndex];
 
@@ -23,9 +15,10 @@ const ImagesGrid = ({ annotations, labels, columns = 4 }) => {
         key={rowIndex * columns + columnIndex}
         annotations={data}
         imageUrl={data.thumbnailUrl}
-        imageWidth={data.imageHidth}
+        imageWidth={data.imageWidth}
         imageHeight={data.imageHeight}
-        labelColors={labelColors}
+        labelColors={Store.labelColors}
+        hiddenLabels={Store.hiddenLabels}
         style={style}
       />
     );
@@ -37,7 +30,7 @@ const ImagesGrid = ({ annotations, labels, columns = 4 }) => {
         <Grid
           columnCount={columns}
           columnWidth={width / columns}
-          height={height}
+          height={height - 28}
           rowCount={Math.ceil(annotations.length / columns)}
           rowHeight={(9 / 16) * (width / columns)}
           width={width}
@@ -48,4 +41,4 @@ const ImagesGrid = ({ annotations, labels, columns = 4 }) => {
   );
 };
 
-export default ImagesGrid;
+export default view(ImagesGrid);

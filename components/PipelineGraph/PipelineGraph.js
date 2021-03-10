@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box } from '@chakra-ui/react';
 import ReactFlow, { removeElements, addEdge } from 'react-flow-renderer';
-import {useWindowDimensions} from "../../utils/hooks";
+import { useWindowDimensions } from '../../utils/hooks';
 
 const inputElement = {
   id: 'input',
@@ -38,7 +38,7 @@ const PipelineGraph = ({ labels }) => {
   };
 
   return (
-    <Box width="100%" height={height - 200} color="white" fill="white">
+    <Box width="100%" height={height - 120} color="white" fill="white">
       <ReactFlow
         minZoom={1}
         maxZoom={1}
@@ -46,7 +46,6 @@ const PipelineGraph = ({ labels }) => {
         onElementsRemove={onElementsRemove}
         paneMoveable={false}
         onConnect={onConnect}
-        deleteKeyCode={46} /* 'delete'-key */
       />
     </Box>
   );

@@ -17,3 +17,13 @@ export const fetchProjectLabels = async (projectId) => {
   const response = await axiosInstance.get(`project/${projectId}/labels`);
   return response.data;
 };
+
+export const fetchAnnotations = async (projectId, pipeline, page, pageSize) => {
+  const response = await axiosInstance.post(
+    `annotations/pipeline?page=${page}&page_size=${pageSize}`,
+    pipeline,
+    { headers: { 'project-id': projectId } },
+  );
+
+  return response.data;
+};

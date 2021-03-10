@@ -9,6 +9,10 @@ module.exports = {
     ];
   },
   images: {
-    domains: ['hips.hearstapps.com', 'picsum.photos'],
+    domains: [
+      'hips.hearstapps.com',
+      'picsum.photos',
+      'labelity-use-dev-images.s3.amazonaws.com',
+    ],
   },
 };
