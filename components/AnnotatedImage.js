@@ -135,7 +135,7 @@ const Polyline = ({
       <Line
         points={absolutePoints}
         stroke={color}
-        fill={`rgba(${fillColor.red}, ${fillColor.green}, ${fillColor.blue}, 0.6)`}
+        fill={`rgba(${fillColor.red}, ${fillColor.green}, ${fillColor.blue}, 0.5)`}
         strokeWidth={2}
         onMouseMove={handleOnMouseEnter}
         onMouseLeave={handleOnMouseLeave}
@@ -173,7 +173,7 @@ const Keypoints = ({
           y={offsetY + y * imageHeight}
           points={points}
           stroke={color}
-          radius={4}
+          radius={3}
           strokeWidth={1.5}
           opacity={0.9}
           onMouseMove={handleOnMouseEnter}

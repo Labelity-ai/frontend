@@ -25,10 +25,10 @@ const ImportAnnotationsModal = ({ open, onClose }) => {
         <ModalCloseButton />
         <ModalBody paddingBottom="35px">
           <FileUpload
-            supportedMimeTypes={['.json', '.xml']}
+            supportedMimeTypes={['image/jpeg', 'image/png', 'image/bmp']}
             onAcceptedFilesChanged={setAcceptedFiles}
-            infoText="(Only *.json, *.xml files will be accepted)"
-            maxFiles={10}
+            infoText="(Only JPEG, PNG and BMP images will be accepted)"
+            maxFiles={1000}
           />
         </ModalBody>
       </ModalContent>
