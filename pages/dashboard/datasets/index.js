@@ -1,31 +1,20 @@
 import React, { useState } from 'react';
 import {
-  Box, Tabs, TabList, TabPanels, Tab, TabPanel, HStack, Button,
+  Tabs, TabList, TabPanels, Tab, TabPanel, Button,
 } from '@chakra-ui/react';
-import { useSession } from 'next-auth/client';
-import { useRouter } from 'next/router';
 
 import { FaFileImport } from 'react-icons/fa';
-import SideNavigation from '../components/SideNavigation';
-import DashboardContainer from '../components/DashboardContainer';
-import QueryBuilderTab from '../components/QueryBuilderTab';
-import ImportAnnotationsModal from '../components/ImportAnnotationsModal';
-import ImportImagesModal from '../components/ImportImagesModal';
+import QueryBuilderTab from '../../../components/QueryBuilderTab';
+import ImportAnnotationsModal from '../../../components/ImportAnnotationsModal';
+import ImportImagesModal from '../../../components/ImportImagesModal';
+import DashboardLayout from '../../../layouts/DashboardLayout';
 
-const Dashboard = () => {
-  const router = useRouter();
-  const [session, loading] = useSession();
+const DatasetsIndex = () => {
   const [importModalOpen, setImportModalOpen] = useState(false);
   const [uploadImagesModalOpen, setUploadImagesModalOpen] = useState(false);
 
-  React.useEffect(() => {
-    // if (!loading && !session) router.push('/login');
-  }, [session, loading]);
-
-  if (loading) return null;
-
   return (
-    <HStack height="100vh">
+    <DashboardLayout>
       <ImportAnnotationsModal
         open={importModalOpen}
         onClose={() => setImportModalOpen(false)}
@@ -34,13 +23,9 @@ const Dashboard = () => {
         open={uploadImagesModalOpen}
         onClose={() => setUploadImagesModalOpen(false)}
       />
-      <Box height="100vh" bgColor="gray.900">
-        <SideNavigation />
-      </Box>
       <Tabs height="100vh" width="100%">
         <TabList paddingLeft="20px">
-          <Tab>Image View</Tab>
-          <Tab>Query Builder</Tab>
+          <Tab>Datasets</Tab>
           <Button
             marginTop="auto"
             marginBottom="auto"
@@ -64,16 +49,13 @@ const Dashboard = () => {
           </Button>
         </TabList>
         <TabPanels height="95vh">
-          <TabPanel height="100%">
-            <DashboardContainer />
-          </TabPanel>
           <TabPanel>
             <QueryBuilderTab />
           </TabPanel>
         </TabPanels>
       </Tabs>
-    </HStack>
+    </DashboardLayout>
   );
 };
 
-export default Dashboard;
+export default DatasetsIndex;
