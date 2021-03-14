@@ -9,7 +9,7 @@ import {
 import Image from 'next/image';
 import chunk from 'lodash.chunk';
 import hexRgb from 'hex-rgb';
-import { cover } from 'intrinsic-scale';
+import { contain, cover } from 'intrinsic-scale';
 import { view } from '@risingstack/react-easy-state';
 
 const TAG_HEIGHT = 20;
@@ -135,7 +135,7 @@ const Polyline = ({
       <Line
         points={absolutePoints}
         stroke={color}
-        fill={`rgba(${fillColor.red}, ${fillColor.green}, ${fillColor.blue}, 0.5)`}
+        fill={`rgba(${fillColor.red}, ${fillColor.green}, ${fillColor.blue}, 0.4)`}
         strokeWidth={2}
         onMouseMove={handleOnMouseEnter}
         onMouseLeave={handleOnMouseLeave}
@@ -195,15 +195,25 @@ const Keypoints = ({
 };
 
 const AnnotatedImage = ({
-  imageUrl, imageWidth = 500, imageHeight = 300, annotations, labelColors, style, hiddenLabels,
+  imageUrl,
+  imageWidth = 500,
+  imageHeight = 300,
+  annotations,
+  labelColors,
+  style,
+  hiddenLabels,
+  objectFit = 'cover',
+  onClick,
 }) => {
   const [tagWidths, setTagWidths] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
   const { width, height } = style;
 
+  const dimensionsCalculator = objectFit === 'cover' ? cover : contain;
+
   const {
     width: effectiveImageWidth, height: effectiveImageHeight, x, y,
-  } = cover(width, height, imageWidth, imageHeight);
+  } = dimensionsCalculator(width, height, imageWidth, imageHeight);
 
   const {
     detections, polygons, polylines, points, tags,
@@ -222,12 +232,12 @@ const AnnotatedImage = ({
   }, [tagWidths]);
 
   return (
-    <div style={style}>
+    <div style={style} onClick={onClick}>
       <Image
         src={imageUrl || 'https://picsum.photos/500/300'}
         width={width}
         height={height}
-        objectFit="cover"
+        objectFit={objectFit}
         onLoad={() => setIsLoaded(true)}
       />
       <div style={{
