@@ -27,3 +27,12 @@ export const fetchAnnotations = async (projectId, pipeline, page, pageSize) => {
 
   return response.data;
 };
+
+export const fetchStagesJSONSchema = async (projectId) => {
+  const response = await axiosInstance.get(
+    '/annotations/meta/stages',
+    { headers: { 'project-id': projectId } },
+  );
+
+  return response.data;
+};

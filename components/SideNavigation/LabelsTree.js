@@ -1,4 +1,4 @@
-/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/no-array-index-key,no-param-reassign */
 import React, { useMemo } from 'react';
 import _ from 'lodash';
 import { Box } from '@chakra-ui/react';
@@ -8,19 +8,19 @@ import styles from './LabelsTreeStyle.module.css';
 import HierarchyTree from '../HierarchyTree';
 import Store from '../../utils/store';
 
-const LabelsTree = ({ labels }) => {
+const LabelsTree = ({ labels, labelsStore = Store }) => {
   const hiddenShapes = store({ });
   const groupedLabels = useMemo(() => _.groupBy(labels, 'shape'), [labels]);
 
   const handleOnLabelVisibilityChange = (name, shape, value) => {
-    Store.hiddenLabels[`${name}-${shape}`] = !value;
+    labelsStore.hiddenLabels[`${name}-${shape}`] = !value;
   };
 
   const handleOnShapeVisibilityChange = (shape, labelGroup, value) => {
     batch(() => {
       hiddenShapes[shape] = !value;
       _.forEach(labelGroup, (label) => {
-        Store.hiddenLabels[`${label.name}-${shape}`] = !value;
+        labelsStore.hiddenLabels[`${label.name}-${shape}`] = !value;
       });
     });
   };
@@ -50,7 +50,7 @@ const LabelsTree = ({ labels }) => {
                 key={`${name}-${shape}`}
                 content={name}
                 canHide
-                visible={!Store.hiddenLabels[`${name}-${shape}`]}
+                visible={!labelsStore.hiddenLabels[`${name}-${shape}`]}
                 onVisibilityChanged={(value) => handleOnLabelVisibilityChange(name, shape, value)}
                 leftIcon={<FaSquare color={Store.labelColors[`${name}-${shape}`]} style={{ display: 'inline' }} />}
               >

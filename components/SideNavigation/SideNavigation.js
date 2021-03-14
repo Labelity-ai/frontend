@@ -66,7 +66,7 @@ const SideNavigation = () => {
           <NavigationButton
             name="Annotations"
             icon={<FaDatabase color="gray.300" />}
-            to="/dashboard/annotations"
+            to="/dashboard"
           />
           <NavigationButton
             name="Datasets"
