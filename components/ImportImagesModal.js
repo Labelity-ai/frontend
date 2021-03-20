@@ -1,39 +1,44 @@
-import React, { useState } from 'react';
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalCloseButton,
-} from '@chakra-ui/react';
-import FileUpload from './FileUpload';
+import React from 'react';
+import AwsS3 from '@uppy/aws-s3';
+import { DashboardModal, useUppy } from '@uppy/react';
+import Uppy from '@uppy/core';
+import '@uppy/core/dist/style.css';
+import '@uppy/dashboard/dist/style.css';
+import { getSignedUrlForImageUpload } from '../utils/api';
+import Store from '../utils/store';
 
-const ImportAnnotationsModal = ({ open, onClose }) => {
-  const [acceptedFiles, setAcceptedFiles] = useState([]);
+const uppyOptions = {
+  restrictions: {
+    maxFileSize: 10 * 1024 * 1024,
+    allowedFileTypes: ['.jpg', '.jpeg', '.png', '.bmp'],
+  },
+};
+
+const ImportImagesModal = ({ open, onClose }) => {
+  const uppy = useUppy(() => new Uppy(uppyOptions)
+    .use(AwsS3, {
+      timeout: 60 * 1000,
+      getUploadParameters: (file) => (
+        getSignedUrlForImageUpload(file.name, file.type, Store.selectedProject)
+      ),
+    }));
 
   return (
-    <Modal
-      isOpen={open}
-      onClose={onClose}
-      width="80%"
-      maxWidth="90vh"
-    >
-      <ModalOverlay />
-      <ModalContent maxWidth="90vh">
-        <ModalHeader>Import annotations</ModalHeader>
-        <ModalCloseButton />
-        <ModalBody paddingBottom="35px">
-          <FileUpload
-            supportedMimeTypes={['image/jpeg', 'image/png', 'image/bmp']}
-            onAcceptedFilesChanged={setAcceptedFiles}
-            infoText="(Only JPEG, PNG and BMP images will be accepted)"
-            maxFiles={1000}
-          />
-        </ModalBody>
-      </ModalContent>
-    </Modal>
+    <DashboardModal
+      open={open}
+      onRequestClose={onClose}
+      showProgressDetails
+      uppy={uppy}
+      showLinkToFileUploadResult={false}
+      locale={{
+        strings: {
+          dropHereOr: 'Drop here or %{browse}',
+          browse: 'browse',
+          poweredBy2: '',
+        },
+      }}
+    />
   );
 };
 
-export default ImportAnnotationsModal;
+export default ImportImagesModal;

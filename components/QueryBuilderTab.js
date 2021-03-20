@@ -21,6 +21,7 @@ import {
 import { useSession } from 'next-auth/client';
 import { FaPlay, FaPlus } from 'react-icons/fa';
 import _ from 'lodash';
+import { view } from '@risingstack/react-easy-state';
 
 import { useQuery } from 'react-query';
 import PipelineGraph from './PipelineGraph';
@@ -41,7 +42,6 @@ const QueryBuilderTag = () => {
 
   React.useEffect(() => {
     Store.stagesSchemas = stagesSchemas;
-    console.log(_.keys(stagesSchemas));
   }, [stagesSchemas]);
 
   React.useEffect(() => {
@@ -172,4 +172,4 @@ const QueryBuilderTag = () => {
   );
 };
 
-export default QueryBuilderTag;
+export default view(QueryBuilderTag);

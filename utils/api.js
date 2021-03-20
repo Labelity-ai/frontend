@@ -36,3 +36,15 @@ export const fetchStagesJSONSchema = async (projectId) => {
 
   return response.data;
 };
+
+export const getSignedUrlForImageUpload = async (fileName, contentType, projectId) => {
+  const params = { event_id: fileName, mime_type: contentType };
+
+  const response = await axiosInstance.post(
+    '/storage/image',
+    null,
+    { headers: { 'project-id': projectId }, params },
+  );
+
+  return response.data;
+};
