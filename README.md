@@ -1,3 +1,1 @@
-# next-auth-test
-
-# Configuration
+# Labelity Frontend App
